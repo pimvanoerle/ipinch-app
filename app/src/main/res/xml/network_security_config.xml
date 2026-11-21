@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cleartext is allowed because the endpoint is typically a plain-HTTP server on your
+     home LAN or a Tailscale address. Use https:// if yours is reachable from the internet. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

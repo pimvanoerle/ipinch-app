@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView style="@style/Label" android:text="Endpoint URL" />
+        <EditText
+            android:id="@+id/url"
+            style="@style/Field"
+            android:inputType="textUri" />
+        <TextView style="@style/Hint" android:text="Base URL of your conversation endpoint, e.g. http://192.168.1.50:8780 (the app appends /v1/turn)" />
+
+        <TextView style="@style/Label" android:text="Token (X-Pinch-Token)" />
+        <EditText
+            android:id="@+id/token"
+            style="@style/Field"
+            android:inputType="textPassword" />
+
+        <TextView style="@style/Label" android:text="Device name" />
+        <EditText
+            android:id="@+id/device"
+            style="@style/Field"
+            android:inputType="text" />
+        <TextView style="@style/Hint" android:text="Sent as `device`; the endpoint uses it to pick a scope." />
+
+        <CheckBox
+            android:id="@+id/speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Speak replies out loud"
+            android:textColor="@color/foam" />
+
+        <CheckBox
+            android:id="@+id/autoListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep listening after a spoken reply"
+            android:textColor="@color/foam" />
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Test connection" />
+
+        <TextView
+            android:id="@+id/testResult"
+            style="@style/Hint" />
+
+        <Button
+            android:id="@+id/assistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Set as assistant app…" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/crab"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>

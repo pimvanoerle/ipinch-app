@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">iPinch</string>
+    <string name="settings">iPinch settings</string>
+    <string name="hint">Say or type something…</string>
+</resources>

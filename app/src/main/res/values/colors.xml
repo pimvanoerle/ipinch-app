@@ -1,0 +1,8 @@
+<resources>
+    <color name="crab">#FF7A59</color>
+    <color name="crab_dark">#E0583A</color>
+    <color name="sea">#0F2233</color>
+    <color name="sea_light">#1B3A52</color>
+    <color name="foam">#F4F1EA</color>
+    <color name="muted">#9FB3C4</color>
+</resources>
